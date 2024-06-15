@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+
+<link rel="stylesheet" href="../../css/para aprender/estilogaleria.css" class="">
+
+</head>
+<body>
+
+    <div class="caixa">
+       
+        <div class="galeria">
+           
+            <img src="https://c4.wallpaperflare.com/wallpaper/578/238/558/moon-1920x1080-space-moons-hd-art-wallpaper-thumb.jpg" alt=""
+             id="imagemPrincipal">
+            
+            <div class="miniaturas">
+
+                <img src="https://c4.wallpaperflare.com/wallpaper/578/238/558/moon-1920x1080-space-moons-hd-art-wallpaper-thumb.jpg" alt=""  
+                id="miniatura1"   onmousemove="mudarImagemParaMiniatura1()"   class="miniatura">
+                              
+                <img src="https://classic.exame.com/wp-content/uploads/2020/07/GettyImages-1162816285.jpg?quality=70&strip=info&w=1024" alt=""
+                 id="miniatura2" onmousemove="mudarImagemParaMiniatura2()" class="miniatura">
+                
+                <img src="https://t.ctcdn.com.br/IHaHPCrEmb_ndk8WhIVGjBQUXNA=/1024x576/smart/i475957.jpeg" alt="" 
+                 id="miniatura3" onmousemove="mudarImagemParaMiniatura3()" class="miniatura">
+         
+
+
+
+           </div>
+        </div>
+    </div>
+
+    <script>
+
+const imagemPrincipal = document.getElementById("imagemPrincipal");
+
+function mudarImagemParaMiniatura1()
+{
+   const foto1 = document.getElementById("miniatura1");
+
+   imagemPrincipal.src = foto1.src
+}
+
+function mudarImagemParaMiniatura2()
+{
+   const foto2 = document.getElementById("miniatura2");
+
+   imagemPrincipal.src = foto2.src
+}
+
+function mudarImagemParaMiniatura3()
+{
+   const foto3 = document.getElementById("miniatura3");
+
+   imagemPrincipal.src = foto3.src
+}
+
+    </script>
+</body>
+</html>
